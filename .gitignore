@@ -1,0 +1,16 @@
+/vendor
+/bootstrap/compiled.php
+.env.*.php
+.env.php
+.env
+.idea
+.bowerrc
+.buildpath
+.project
+.settings/
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+.idea/
+Tutorial

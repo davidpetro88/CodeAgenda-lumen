@@ -1,0 +1,106 @@
+[2015-12-04 02:05:20] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Providers\AppServiceProvider' not found' in /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php:268
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2015-12-04 02:05:20] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Providers\AppServiceProvider' not found' in /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php:268
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2015-12-04 02:05:41] lumen.ERROR: exception 'RuntimeException' with message 'Session store not set on request.' in /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/http/Request.php:758
+Stack trace:
+#0 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/http/Request.php(443): Illuminate\Http\Request->session()
+#1 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/helpers.php(255): Illuminate\Http\Request->old('descricao', NULL)
+#2 /eb91db2b54a0ba45ede8a8c7cc27bdcb(14): old('descricao')
+#3 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/Engines/PhpEngine.php(42): include('/eb91db2b54a0ba...')
+#4 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/Engines/CompilerEngine.php(58): Illuminate\View\Engines\PhpEngine->evaluatePath('/eb91db2b54a0ba...', Array)
+#5 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/View.php(135): Illuminate\View\Engines\CompilerEngine->get('/home/david/Doc...', Array)
+#6 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/View.php(106): Illuminate\View\View->getContents()
+#7 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/View.php(80): Illuminate\View\View->renderContents()
+#8 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/http/Response.php(51): Illuminate\View\View->render()
+#9 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/symfony/http-foundation/Response.php(198): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#10 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1454): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#11 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1400): Laravel\Lumen\Application->prepareResponse(Object(Illuminate\View\View))
+#12 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1364): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#13 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1335): Laravel\Lumen\Application->callLumenController(Object(CodeAgenda\Http\Controllers\TelefoneController), 'create', Array)
+#14 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1303): Laravel\Lumen\Application->callControllerAction(Array)
+#15 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1288): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#16 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1262): Laravel\Lumen\Application->handleFoundRoute(Array)
+#17 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1212): Laravel\Lumen\Application->handleDispatcherResponse(Array)
+#18 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1442): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#19 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1213): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#20 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1153): Laravel\Lumen\Application->dispatch(NULL)
+#21 /home/david/Documentos/curso/php/lumen/CodeAgenda/public/index.php(28): Laravel\Lumen\Application->run()
+#22 /home/david/Documentos/curso/php/lumen/CodeAgenda/server.php(12): require_once('/home/david/Doc...')
+#23 {main}
+
+Next exception 'ErrorException' with message 'Session store not set on request. (View: /home/david/Documentos/curso/php/lumen/CodeAgenda/resources/views/telefone/create.blade.php)' in /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/http/Request.php:758
+Stack trace:
+#0 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/Engines/PhpEngine.php(44): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(RuntimeException), 1)
+#1 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/Engines/CompilerEngine.php(58): Illuminate\View\Engines\PhpEngine->evaluatePath('/eb91db2b54a0ba...', Array)
+#2 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/View.php(135): Illuminate\View\Engines\CompilerEngine->get('/home/david/Doc...', Array)
+#3 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/View.php(106): Illuminate\View\View->getContents()
+#4 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/View.php(80): Illuminate\View\View->renderContents()
+#5 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/http/Response.php(51): Illuminate\View\View->render()
+#6 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/symfony/http-foundation/Response.php(198): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1454): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1400): Laravel\Lumen\Application->prepareResponse(Object(Illuminate\View\View))
+#9 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1364): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#10 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1335): Laravel\Lumen\Application->callLumenController(Object(CodeAgenda\Http\Controllers\TelefoneController), 'create', Array)
+#11 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1303): Laravel\Lumen\Application->callControllerAction(Array)
+#12 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1288): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#13 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1262): Laravel\Lumen\Application->handleFoundRoute(Array)
+#14 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1212): Laravel\Lumen\Application->handleDispatcherResponse(Array)
+#15 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1442): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#16 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1213): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#17 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1153): Laravel\Lumen\Application->dispatch(NULL)
+#18 /home/david/Documentos/curso/php/lumen/CodeAgenda/public/index.php(28): Laravel\Lumen\Application->run()
+#19 /home/david/Documentos/curso/php/lumen/CodeAgenda/server.php(12): require_once('/home/david/Doc...')
+#20 {main}  
+[2015-12-04 02:05:55] lumen.ERROR: exception 'RuntimeException' with message 'Session store not set on request.' in /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/http/Request.php:758
+Stack trace:
+#0 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/http/Request.php(443): Illuminate\Http\Request->session()
+#1 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/helpers.php(255): Illuminate\Http\Request->old('nome', NULL)
+#2 /82a2bc06c9f156a4f71e4ee252bef858(12): old('nome')
+#3 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/Engines/PhpEngine.php(42): include('/82a2bc06c9f156...')
+#4 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/Engines/CompilerEngine.php(58): Illuminate\View\Engines\PhpEngine->evaluatePath('/82a2bc06c9f156...', Array)
+#5 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/View.php(135): Illuminate\View\Engines\CompilerEngine->get('/home/david/Doc...', Array)
+#6 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/View.php(106): Illuminate\View\View->getContents()
+#7 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/View.php(80): Illuminate\View\View->renderContents()
+#8 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/http/Response.php(51): Illuminate\View\View->render()
+#9 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/symfony/http-foundation/Response.php(198): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#10 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1454): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#11 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1400): Laravel\Lumen\Application->prepareResponse(Object(Illuminate\View\View))
+#12 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1364): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#13 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1335): Laravel\Lumen\Application->callLumenController(Object(CodeAgenda\Http\Controllers\PessoaController), 'create', Array)
+#14 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1303): Laravel\Lumen\Application->callControllerAction(Array)
+#15 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1288): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#16 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1207): Laravel\Lumen\Application->handleFoundRoute(Array)
+#17 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1442): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#18 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1213): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#19 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1153): Laravel\Lumen\Application->dispatch(NULL)
+#20 /home/david/Documentos/curso/php/lumen/CodeAgenda/public/index.php(28): Laravel\Lumen\Application->run()
+#21 /home/david/Documentos/curso/php/lumen/CodeAgenda/server.php(12): require_once('/home/david/Doc...')
+#22 {main}
+
+Next exception 'ErrorException' with message 'Session store not set on request. (View: /home/david/Documentos/curso/php/lumen/CodeAgenda/resources/views/pessoa/create.blade.php)' in /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/http/Request.php:758
+Stack trace:
+#0 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/Engines/PhpEngine.php(44): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(RuntimeException), 1)
+#1 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/Engines/CompilerEngine.php(58): Illuminate\View\Engines\PhpEngine->evaluatePath('/82a2bc06c9f156...', Array)
+#2 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/View.php(135): Illuminate\View\Engines\CompilerEngine->get('/home/david/Doc...', Array)
+#3 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/View.php(106): Illuminate\View\View->getContents()
+#4 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/view/View.php(80): Illuminate\View\View->renderContents()
+#5 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/illuminate/http/Response.php(51): Illuminate\View\View->render()
+#6 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/symfony/http-foundation/Response.php(198): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1454): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1400): Laravel\Lumen\Application->prepareResponse(Object(Illuminate\View\View))
+#9 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1364): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#10 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1335): Laravel\Lumen\Application->callLumenController(Object(CodeAgenda\Http\Controllers\PessoaController), 'create', Array)
+#11 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1303): Laravel\Lumen\Application->callControllerAction(Array)
+#12 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1288): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#13 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1207): Laravel\Lumen\Application->handleFoundRoute(Array)
+#14 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1442): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#15 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1213): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#16 /home/david/Documentos/curso/php/lumen/CodeAgenda/vendor/laravel/lumen-framework/src/Application.php(1153): Laravel\Lumen\Application->dispatch(NULL)
+#17 /home/david/Documentos/curso/php/lumen/CodeAgenda/public/index.php(28): Laravel\Lumen\Application->run()
+#18 /home/david/Documentos/curso/php/lumen/CodeAgenda/server.php(12): require_once('/home/david/Doc...')
+#19 {main}  
